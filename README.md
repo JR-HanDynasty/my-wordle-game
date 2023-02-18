@@ -6,7 +6,7 @@ It was a Friday afternoon. When the setting sun shined brightly into the huge wi
 
 Trying to keep my brain occupied, I took out my phone for some games. Unfortunately, the first thing (the thrid thing ... to be more accurate) in my mornings is to complete the daliy Wordle challenge on New York Times. So, I got no Wordle to play at that moment. I guess I'm not the only person who thinks the rate New York Times updates their challenges are a bit to slow. 
 
-So, how a about making my own Wordle game? A one I can play anytime. 
+So, how about making my own Wordle game? A one I can play anytime. 
 
 About myself. I'm a Freshman at an Art School (so it's obvious that I'm currently not majoring in comp-sci lol). And I just got started with Java. So why not write the game program using Java.
 
