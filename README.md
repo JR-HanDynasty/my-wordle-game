@@ -96,14 +96,13 @@ like this:
 ```
 
 - The answer for each puzzle is always a commonly used word. However, your attempts don't have to be.
-- Sometimes, letters repeat. For instance, when the answer is `ERROR`. When the user enters the guess attempt `crane`. The output will be:
-```|  C  | {R} |  A  |  N  | {E} |```. The `{R}` does not tell how many `R`s there is. On the other hand, if the user enters 
+- Sometimes, letters repeat. For instance, when the answer is `ERROR`. When the user enters the guess attempt `crane`. the output will be:
+```|  C  | {R} |  A  |  N  | {E} |```. The `{R}` does not tell how many `R`s there is. On the other hand, if the user enters `racer`, the program will report ```| {R} |  A  |  C  |  E  | [R] |```. The `{R}` and `[R]` tells there's more than one `R`s when there are multiple `R`s in the attempt. 
 
+- There are something wrong with the word banks :(
 
-
-
-### Sometimes, the game fucks with you
-
+### Sometimes, the word banks fuck with you
+You see, answers of each puzzle came out of the `CommonWords.txt` file, and the judgement of user's attempts are made according to the `AllWords.txt` file. In the case of `MULTI`, it's present in `CommonWords.txt` so it became the answer, but the judgement does not recognize it cuz it's not in the `AllWords.txt`. It happens more often when it comes to the difference of Britsh and American English. These small discrepancies are easy to fix. I'm on it. The chance of this happing is stll relatively low. 
 ```
 --------------------------------GAME-NOW-STARTS---------------------------------
 
@@ -122,4 +121,10 @@ The answer is MULTI. Better luck next time   // WTF ???
 --------------------------------GAME-NOW-ENDS-----------------------------------
 ```
 
+## Some next steps
+- maybe developing an algorithm that plays the game.
+- or recreate other NYT games like SpellingBee, CrossWords, etc.
 
+
+
+see ya ~ 
