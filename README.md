@@ -45,8 +45,64 @@ Rules: guess the 5 letter word in 6 turns.
 --------------------------------GAME-NOW-ENDS-----------------------------------
 ```
 
+#### 2. FATAL
+With the same logic:
+```
+--------------------------------GAME-NOW-STARTS---------------------------------
 
-### Sometimes, the program fucks with you
+           Begin:  |     |     |     |     |     |  Your guess: crane
+(ACCEPTED) Turn 1: |  C  |  R  | {A} |  N  |  E  |  Your guess: about
+(ACCEPTED) Turn 2: | {A} |  B  |  O  |  U  | {T} |  Your guess: faith
+(ACCEPTED) Turn 3: | [F] | [A] |  I  | {T} |  H  |  Your guess: fatal
+(ACCEPTED) Turn 4: | [F] | [A] | [T] | [A] | [L] |  You've guessed the word in 4 turns. Well done
+
+--------------------------------GAME-NOW-ENDS-----------------------------------
+```
+
+#### 3. EARLY
+If you used up all your turns, the program will tell you what is answer is :) 
+```
+--------------------------------GAME-NOW-STARTS---------------------------------
+
+           Begin:  |     |     |     |     |     |  Your guess: Adieu
+(ACCEPTED) Turn 1: | {A} |  D  |  I  | {E} |  U  |  Your guess: barge
+(ACCEPTED) Turn 2: |  B  | [A] | [R] |  G  | {E} |  Your guess: earth
+(ACCEPTED) Turn 3: | [E] | [A] | [R] |  T  |  H  |  Your guess: earns
+(ACCEPTED) Turn 4: | [E] | [A] | [R] |  N  |  S  |  Your guess: eared       // I intened to make this mistake
+(ACCEPTED) Turn 5: | [E] | [A] | [R] |  E  |  D  |  Your guess: earls       // I intened to make this mistake
+(ACCEPTED) Turn 6: | [E] | [A] | [R] | [L] |  S  |  You've used up all turns
+
+The answer is EARLY. Better luck next time
+
+--------------------------------GAME-NOW-ENDS-----------------------------------
+```
+
+### Things to know
+- When entering the 5 lettered word guess, cases DO NOT matter.
+
+An attempt will be rejected if:
+- the length of your word is not 5
+- there are non-alphabetic characters in the word
+- it is not a valid word (determined by comparison with a huge word bank)
+like this:
+```
+--------------------------------GAME-NOW-STARTS---------------------------------
+
+           Begin:  |     |     |     |     |     |  Your guess: lengthIsNotFive     // length != 5
+ (INVALID)                                          Your guess: *#%$                // Non-Alpha
+ (INVALID)                                          Your guess: lmaos               // Not a word
+ (INVALID)                                          Your guess: yield               // yeah... I yielded, entered a valid word
+(ACCEPTED) Turn 1: |  Y  | {I} |  E  |  L  |  D  |  Your guess: 
+```
+
+- The answer for each puzzle is always a commonly used word. However, your attempts don't have to be.
+- Sometimes, letters repeat. For instance, when the answer is `ERROR`. When the user enters the guess attempt `crane`. The output will be:
+```|  C  | {R} |  A  |  N  | {E} |```. The `{R}` does not tell how many `R`s there is. On the other hand, if the user enters 
+
+
+
+
+### Sometimes, the game fucks with you
 
 ```
 --------------------------------GAME-NOW-STARTS---------------------------------
