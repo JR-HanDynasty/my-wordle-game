@@ -2,7 +2,7 @@
 Hey yo!
 
 ## Backgrounds
-It was a Friday afternoon, when the setting sun shined brightly into the huge windows of a 8th floor lounge. I got so bored.  :( 
+It was a Friday afternoon. When the setting sun shined brightly into the huge windows of a 8th floor lounge, I got so bored.  :( 
 
 Trying to keep my brain occupied, I took out my phone for some games. Unfortunately, the first thing (the thrid thing ... to be more accurate) in my mornings is to complete the daliy Wordle challenge on New York Times. So, I got no Wordle to play at that moment. I guess I'm not the only person who thinks the rate New York Times updates their challenges are a bit to slow. 
 
